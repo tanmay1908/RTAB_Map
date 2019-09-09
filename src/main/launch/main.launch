@@ -2,6 +2,9 @@
 
 <include file="$(find my_robot)/launch/world.launch" />
 <include file="$(find my_robot)/launch/amcl.launch" />
+<include file="$(find teleop_twist_keyboard)/launch/teleop.launch" />
+<include file="$(find main)/launch/mapping.launch" />
+
 
 <node pkg="rviz" type="rviz" name="rviz_map" args="-d /home/workspace/catkin_ws/src/my_robot/config/rviz_config.rviz" />
 
